@@ -1,3 +1,8 @@
+
+TODO:
+
+1. Add GA to repo
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFZ35MZK8H"></script>

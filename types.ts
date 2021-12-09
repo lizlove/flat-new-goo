@@ -36,7 +36,7 @@ export type Catalog = {
 };
 
 function populateCatalogFieldMap(cat: Catalog): void {
-  const defaults = {units: null}; /* fields to propagate down */
+  const defaults = {units: null}; /* fields to propagate down bc may be specified on parent not child*/
   function populateFieldMap(map: Dict<Field>, fields: Field[], parent: Field): void {
     for (let f of fields) {
       map[f.name] = f;
@@ -64,13 +64,14 @@ type Bucket<T> = {
 };
 export type AggrTerms<T> = {
   buckets: Array<Bucket<T>>;
-};
+}; //AggrTerms = plot data or hist data.
 
-export type Aggr = AggrStats | AggrTerms<string | number>;
+
+export type Aggr = AggrStats | AggrTerms<string | number>;  
 
 /* server responses to queries */
 export type CatalogResponse = {
-  hits: {
+  hits: { // hits limited to paginated chunk
     total: number; /* total matching items */
     hits: Dict<any>[]; /* individual matches */
   };
