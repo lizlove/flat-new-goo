@@ -1,10 +1,14 @@
-import * as React from "react";
-import "./app.css";
+import React from "react";
+import HelloWorld from "./components/HelloWorld";
+import RenderForm from "./components/RenderForm";
 
-
-export default function App() {
+const App: React.FC<{}> = () => {
   return (
-    <div className="app">
-    </div>
+    <>
+      <HelloWorld />
+      <RenderForm />
+    </>
   );
-}
+};
+
+export default App;
