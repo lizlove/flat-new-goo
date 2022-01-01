@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "carbon-components-react";
 
 const RenderForm: React.FC<{}> = () => {
   const [name, setName] = useState<string>("");
@@ -22,35 +23,6 @@ const RenderForm: React.FC<{}> = () => {
     }
   };
 
-  // const inputStyles: CSSProperties = {
-  //   marginLeft: "0.5rem",
-  //   marginTop: "1rem",
-  //   marginBottom: "1rem",
-  //   height: "24px",
-  //   width: "300px",
-  //   position: "relative",
-  //   bottom: "0.1rem",
-  //   fontSize: "18px",
-  // };
-
-  // const formStyles: CSSProperties = {
-  //   backgroundColor: "lightblue",
-  //   display: "block",
-  //   margin: "1rem",
-  //   paddingLeft: "1rem",
-  // };
-
-  // const containerStyles: CSSProperties = {
-  //   margin: "1rem",
-  //   textAlign: "center",
-  //   fontSize: "24px",
-  // };
-
-  // const submitButtonStyle: CSSProperties = {
-  //   fontSize: "20px",
-  //   marginBottom: "1rem",
-  // };
-
   return (
     <div>
       <label>Input Form:</label>
@@ -73,6 +45,7 @@ const RenderForm: React.FC<{}> = () => {
             onChange={handleEmailChange}
           />
         </div>
+        <Button>Button</Button>
         <input onClick={handleSubmit} type="submit" />
       </form>
       {showDetails ? (

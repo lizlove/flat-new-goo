@@ -1050,6 +1050,19 @@
     "@types/node" "*"
     "@types/responselike" "*"
 
+"@types/carbon-components-react@^7.46.1":
+  version "7.46.1"
+  resolved "https://registry.yarnpkg.com/@types/carbon-components-react/-/carbon-components-react-7.46.1.tgz#f50ccc82f7b21d9bf6cfee6ffbe9d75aba4fb340"
+  integrity sha512-H+w/3DCCCnQ9yGZ9twMGL7lLkSUgoMh4p17zbmzT1pCu+uQwnHBcAnBsOocLedwhNFwGfy5oLvSexwr+M8bKjQ==
+  dependencies:
+    "@types/react" "*"
+    flatpickr "4.6.9"
+
+"@types/carbon__icons-react@^10.31.2":
+  version "10.31.2"
+  resolved "https://registry.yarnpkg.com/@types/carbon__icons-react/-/carbon__icons-react-10.31.2.tgz#3aad2a752f82ccc8a0151d8053edcebc0dc92765"
+  integrity sha512-TFZhgEZVCTbB0AsQfohcMLC1dblJxGIDjSJeleiie5z7bc1O6qfLAjomh0bg54EgkuTNK2UIMJ2QPL1qPQZJyQ==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.1.tgz#8dc390a7b4f9dd9f1284629efce982e41612116e"
