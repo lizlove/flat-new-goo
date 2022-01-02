@@ -27,18 +27,20 @@ const UIShell: React.FC<{}> = () => {
   return (
         <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-      <Header aria-label="Carbon Tutorial">
+      <Header aria-label="Flathub">
         <SkipToContent />
         <HeaderMenuButton
           aria-label="Open menu"
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName href="/" prefix="IBM">
-          Carbon Tutorial
+        <HeaderName href="/" prefix="">
+          Flathub
         </HeaderName>
-        <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+        <HeaderNavigation aria-label="Flathub">
+          <HeaderMenuItem href="/group">Collections</HeaderMenuItem>
+          <HeaderMenuItem href="/catalogs">Catalogs</HeaderMenuItem>
+          <HeaderMenuItem href="/about">About</HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -46,7 +48,9 @@ const UIShell: React.FC<{}> = () => {
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem href="/group">Collections</HeaderMenuItem>
+              <HeaderMenuItem href="/catalogs">Catalogs</HeaderMenuItem>
+              <HeaderMenuItem href="/about">About</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
